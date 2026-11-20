@@ -114,7 +114,7 @@ The supplied screenshots show desktop and mobile interface previews.
 
 | Home | Solo gameplay |
 |---|---|
-| !Home page <img width="1280" height="720" alt="home" src="https://github.com/user-attachments/assets/4986932d-50a3-4806-94f1-5dd582e51fe2" /> | ![Solo gameplay]<img width="1280" height="720" alt="single-player-gameplay" src="https://github.com/user-attachments/assets/cb349295-19f9-4ae0-85d9-448fc5da6018" /> |
+!Home page <img width="1280" height="720" alt="home" src="https://github.com/user-attachments/assets/4986932d-50a3-4806-94f1-5dd582e51fe2" /> | ![Solo gameplay]<img width="1280" height="720" alt="single-player-gameplay" src="https://github.com/user-attachments/assets/cb349295-19f9-4ae0-85d9-448fc5da6018" /> |
 
 | Daily challenge | Game rules |
 |---|---|
