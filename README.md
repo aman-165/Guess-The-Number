@@ -109,26 +109,28 @@ The game supports keyboard navigation between digit inputs, paste handling, and 
 ## 🖼️ Screenshots
 
 The supplied screenshots show desktop and mobile interface previews.
+### Authentication
+
+| Sign up | Login |
+|---|---|
+| <img width="1280" height="720" alt="signup" src="https://github.com/user-attachments/assets/0902fee2-4c8e-4bf1-af22-752f50608793" /> | <img width="1280" height="720" alt="login" src="https://github.com/user-attachments/assets/64476578-9a5a-48bb-8e88-785267120b07" /> |
+
+| Forgot password | Reset password |
+|---|---|
+| <img width="1280" height="720" alt="forgot-password" src="https://github.com/user-attachments/assets/47b2ed67-8a58-497e-be98-843553c2d265" /> | <img width="1280" height="720" alt="reset-password" src="https://github.com/user-attachments/assets/033ce0d5-f5dd-4df8-96bf-31af8a25ae19" /> |
 
 ### Main experience
 
 | Home | Solo gameplay |
 |---|---|
-!Home page <img width="1280" height="720" alt="home" src="https://github.com/user-attachments/assets/4986932d-50a3-4806-94f1-5dd582e51fe2" /> | ![Solo gameplay](<img width="1280" height="720" alt="single-player-gameplay" src="https://github.com/user-attachments/assets/cb349295-19f9-4ae0-85d9-448fc5da6018" />) |
+ <img width="1280" height="720" alt="home" src="https://github.com/user-attachments/assets/4986932d-50a3-4806-94f1-5dd582e51fe2" /> | (<img width="1280" height="720" alt="single-player-gameplay" src="https://github.com/user-attachments/assets/cb349295-19f9-4ae0-85d9-448fc5da6018" />) |
 
 | Daily challenge | Game rules |
 |---|---|
 | ![Daily challenge]<img width="1280" height="720" alt="daily-challenge" src="https://github.com/user-attachments/assets/af488146-9d01-45d6-b1bd-17423f45352c" /> | ![Game rules]<img width="1280" height="720" alt="game-rules" src="https://github.com/user-attachments/assets/3cff53f8-cd52-4855-9b4d-791ccbcfcbb5" /> |
 
-### Authentication
 
-| Sign up | Login |
-|---|---|
-| ![Sign up]<img width="1280" height="720" alt="signup" src="https://github.com/user-attachments/assets/0902fee2-4c8e-4bf1-af22-752f50608793" /> | ![Login]<img width="1280" height="720" alt="login" src="https://github.com/user-attachments/assets/64476578-9a5a-48bb-8e88-785267120b07" /> |
 
-| Forgot password | Reset password |
-|---|---|
-| ![Forgot password]<img width="1280" height="720" alt="forgot-password" src="https://github.com/user-attachments/assets/47b2ed67-8a58-497e-be98-843553c2d265" /> | ![Reset password]<img width="1280" height="720" alt="reset-password" src="https://github.com/user-attachments/assets/033ce0d5-f5dd-4df8-96bf-31af8a25ae19" /> |
 
 ### Social experience
 
