@@ -382,10 +382,15 @@ These are suggestions, not claims about existing functionality.
 - Project repository: [Guess-The-Number](https://github.com/aman-165/Guess-The-Number)
 - Live application: [Play Guess The Number](https://guess-the-number-livid-nu.vercel.app/)
 
-## 📄 License
+## 📄 License and Usage
 
-No `LICENSE` file was present in the supplied project files. Until a license is added to the repository, reuse, modification, and distribution permissions are not explicitly granted by an open-source license.
+**Proprietary — All Rights Reserved.**
 
+This repository may be publicly viewable on GitHub, but the project is not open source and is not offered under an MIT, Apache, GPL, or other open-source license. No general permission is granted to copy, modify, redistribute, sublicense, or use this project commercially.
+
+See [`LICENSE`](./LICENSE) for the project's usage terms. For permission to use any part of this project beyond rights provided by applicable law or the GitHub platform's terms, contact the copyright holder.
+
+Third-party libraries and services used by this project remain subject to their own licenses and terms.
 ---
 
 <div align="center">
