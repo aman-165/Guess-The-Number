@@ -123,44 +123,41 @@ The supplied screenshots show desktop and mobile interface previews.
 
 | Home | Solo gameplay |
 |---|---|
- <img width="1280" height="720" alt="home" src="https://github.com/user-attachments/assets/4986932d-50a3-4806-94f1-5dd582e51fe2" /> | (<img width="1280" height="720" alt="single-player-gameplay" src="https://github.com/user-attachments/assets/cb349295-19f9-4ae0-85d9-448fc5da6018" />) |
+ <img width="1280" height="720" alt="home" src="https://github.com/user-attachments/assets/4986932d-50a3-4806-94f1-5dd582e51fe2" /> | <img width="1280" height="720" alt="single-player-gameplay" src="https://github.com/user-attachments/assets/cb349295-19f9-4ae0-85d9-448fc5da6018" /> |
 
 | Game rules | Daily challenge  |
 |---|---|
 | <img width="1280" height="720" alt="game-rules" src="https://github.com/user-attachments/assets/3cff53f8-cd52-4855-9b4d-791ccbcfcbb5" /> | <img width="1280" height="720" alt="daily-challenge" src="https://github.com/user-attachments/assets/af488146-9d01-45d6-b1bd-17423f45352c" /> |
 
-
-
-
 ### Social experience
 
 | Friends | Find players |
 |---|---|
-| ![Friends]<img width="1280" height="720" alt="friends" src="https://github.com/user-attachments/assets/568b5ab4-1485-4a46-92c7-9e81967018e9" /> | ![Find players]<img width="1280" height="720" alt="find-players" src="https://github.com/user-attachments/assets/356f837e-f79e-416e-a39c-c93457abb863" /> |
+| <img width="1280" height="720" alt="friends" src="https://github.com/user-attachments/assets/568b5ab4-1485-4a46-92c7-9e81967018e9" /> | <img width="1280" height="720" alt="find-players" src="https://github.com/user-attachments/assets/356f837e-f79e-416e-a39c-c93457abb863" /> |
 
 | Friend requests | Chat |
 |---|---|
-| ![Friend requests]<img width="1280" height="720" alt="friend-requests" src="https://github.com/user-attachments/assets/5a57219f-f187-4bbf-9c3d-6e7ecec034bc" /> | ![Chat]<img width="1280" height="720" alt="chat" src="https://github.com/user-attachments/assets/0109af35-5116-4a09-a559-93014e5a9c9b" /> |
+| <img width="1280" height="720" alt="chat" src="https://github.com/user-attachments/assets/0109af35-5116-4a09-a559-93014e5a9c9b" /> | <img width="1280" height="720" alt="friend-requests" src="https://github.com/user-attachments/assets/5a57219f-f187-4bbf-9c3d-6e7ecec034bc" /> | 
 
 ### Challenges and multiplayer
 
 | Incoming challenges | Outgoing challenges |
 |---|---|
-| ![Incoming challenges]<img width="1280" height="720" alt="incoming-challenges" src="https://github.com/user-attachments/assets/6902db27-1994-4f37-ada0-b4a4c522b8ae" /> | ![Outgoing challenges]<img width="1280" height="720" alt="outgoing-challenges" src="https://github.com/user-attachments/assets/1f543057-4d52-4bfd-8faa-6a1a31a378dd" /> |
+| <img width="1280" height="720" alt="incoming-challenges" src="https://github.com/user-attachments/assets/6902db27-1994-4f37-ada0-b4a4c522b8ae" /> | <img width="1280" height="720" alt="outgoing-challenges" src="https://github.com/user-attachments/assets/1f543057-4d52-4bfd-8faa-6a1a31a378dd" /> |
 
-| Multiplayer match | Challenge history |
+| Challenge history | Match history |
 |---|---|
-| ![Multiplayer match]<img width="1280" height="720" alt="multiplayer-match" src="https://github.com/user-attachments/assets/6fdd563f-485d-4a75-84e7-d467d425c118" />| ![Challenge history]<img width="1280" height="720" alt="challenge-history" src="https://github.com/user-attachments/assets/1297add0-e34a-4ec7-ba0b-1a3eeaf9c99d" /> |
+| <img width="1280" height="720" alt="challenge-history" src="https://github.com/user-attachments/assets/1297add0-e34a-4ec7-ba0b-1a3eeaf9c99d" /> | <img width="1280" height="720" alt="match-history" src="https://github.com/user-attachments/assets/20ecb352-a5df-46a2-9f4b-b0e03fba53f5" /> |
 
 ### Profile and settings
 
-| Player profile | Match history |
+| Player profile | Notifications |
 |---|---|
-| ![Player profile]<img width="1280" height="720" alt="profile" src="https://github.com/user-attachments/assets/9cabca0d-9ddf-41b7-a562-88a05abc27f1" /> | ![Match history]<img width="1280" height="720" alt="match-history" src="https://github.com/user-attachments/assets/20ecb352-a5df-46a2-9f4b-b0e03fba53f5" /> |
+| <img width="1280" height="720" alt="profile" src="https://github.com/user-attachments/assets/9cabca0d-9ddf-41b7-a562-88a05abc27f1" /> | <img width="1280" height="720" alt="notifications" src="https://github.com/user-attachments/assets/e8a604cd-64d9-472c-b87a-c2d22fa3aa85" /> |
 
-| Notifications | Sound settings |
+| Sound settings | Multiplayer match |
 |---|---|
-| ![Notifications]<img width="1280" height="720" alt="notifications" src="https://github.com/user-attachments/assets/e8a604cd-64d9-472c-b87a-c2d22fa3aa85" /> | ![Sound settings]<img width="1280" height="720" alt="sound-settings" src="https://github.com/user-attachments/assets/80fb7894-a1d9-477f-8317-c29920e5359b" /> |
+| <img width="1280" height="720" alt="sound-settings" src="https://github.com/user-attachments/assets/80fb7894-a1d9-477f-8317-c29920e5359b" /> | <img width="1280" height="720" alt="multiplayer-match" src="https://github.com/user-attachments/assets/6fdd563f-485d-4a75-84e7-d467d425c118" /> |
 
 ## 🛠️ Technology Stack
 
