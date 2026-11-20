@@ -1,0 +1,32 @@
+/* Phase 6: route-level loading state */
+.route-loading {
+  min-height: 42vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--text-secondary, #aeb9c7);
+  font-weight: 600;
+}
+
+.route-loading__spinner {
+  width: 22px;
+  height: 22px;
+  border: 2px solid rgba(163, 255, 79, .22);
+  border-top-color: var(--accent-primary, #a3ff4f);
+  border-radius: 50%;
+  animation: route-spin .7s linear infinite;
+}
+
+@keyframes route-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-loading__spinner {
+    animation: none;
+    border-top-color: currentColor;
+  }
+}

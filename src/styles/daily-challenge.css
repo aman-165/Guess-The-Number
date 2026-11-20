@@ -1,0 +1,791 @@
+.daily-challenge-page {
+  --daily-bg: #101923;
+  --daily-panel: rgba(22, 33, 47, .92);
+  --daily-border: rgba(164, 187, 211, .13);
+  --daily-muted: #91a0b3;
+  --daily-green: #a3ff4f;
+  --daily-yellow: #f4c44f;
+  width: 100%;
+  min-width: 0;
+  align-self: stretch;
+  padding: clamp(10px, 2vw, 26px) 0 30px;
+  color: #f4f7fb;
+}
+
+.daily-challenge-shell {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+  min-width: 0;
+}
+
+.daily-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: clamp(20px, 4vw, 34px);
+  border: 1px solid var(--daily-border);
+  border-radius: 24px;
+  background: radial-gradient(circle at 88% 12%, rgba(163, 255, 79, .12), transparent 30%), linear-gradient(135deg, #192637, #111923 72%);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, .2);
+}
+
+.daily-hero__copy {
+  min-width: 0;
+}
+
+.daily-eyebrow,
+.daily-section-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #a6b4c5;
+  font-size: .68rem;
+  font-weight: 850;
+  letter-spacing: .15em;
+}
+
+.daily-live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--daily-green);
+  box-shadow: 0 0 12px rgba(163, 255, 79, .8);
+}
+
+.daily-hero h1 {
+  margin: 10px 0 7px;
+  color: #f6f8fb;
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  line-height: 1.05;
+  letter-spacing: -.055em;
+}
+
+.daily-hero h1 span {
+  color: var(--daily-green);
+}
+
+.daily-hero p {
+  margin: 0;
+  color: #a7b4c4;
+  font-size: clamp(.85rem, 1.5vw, 1rem);
+  line-height: 1.6;
+}
+
+.daily-date-card {
+  flex: 0 0 142px;
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  padding: 17px 12px;
+  border: 1px solid rgba(163, 255, 79, .2);
+  border-radius: 18px;
+  background: rgba(163, 255, 79, .055);
+  color: #9eacbd;
+  font-size: .58rem;
+  font-weight: 850;
+  letter-spacing: .1em;
+}
+
+.daily-date-card__icon {
+  color: var(--daily-green);
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.daily-date-card strong {
+  color: #e9f4df;
+  font-size: .75rem;
+  letter-spacing: .06em;
+}
+
+.daily-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(250px, .8fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.daily-game-card,
+.daily-guide-card,
+.daily-history-card {
+  min-width: 0;
+  border: 1px solid var(--daily-border);
+  border-radius: 21px;
+  background: var(--daily-panel);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, .16);
+}
+
+.daily-game-card {
+  padding: clamp(18px, 3vw, 27px);
+}
+
+.daily-card-heading,
+.daily-history-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.daily-card-heading h2,
+.daily-history-heading h2,
+.daily-guide-card h2 {
+  margin: 6px 0 0;
+  color: #f2f6fa;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  letter-spacing: -.025em;
+}
+
+.daily-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  padding: 7px 10px;
+  border: 1px solid rgba(163, 255, 79, .2);
+  border-radius: 999px;
+  color: #c7f4a6;
+  background: rgba(163, 255, 79, .07);
+  font-size: .68rem;
+  font-weight: 800;
+}
+
+.daily-status-badge svg {
+  width: 14px;
+  height: 14px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.daily-status-badge.is-completed {
+  color: #f6d78b;
+  border-color: rgba(244, 196, 79, .2);
+  background: rgba(244, 196, 79, .07);
+}
+
+.daily-status-badge.is-won {
+  color: #baff82;
+}
+
+.daily-attempts-panel {
+  margin-top: 24px;
+  padding: 15px 16px;
+  border: 1px solid rgba(164, 187, 211, .1);
+  border-radius: 15px;
+  background: rgba(4, 10, 17, .22);
+}
+
+.daily-attempts-label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: #a7b4c4;
+  font-size: .8rem;
+}
+
+.daily-attempts-label strong {
+  color: var(--daily-green);
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.daily-attempts-label small {
+  color: #718095;
+  font-size: .75rem;
+}
+
+.daily-attempt-bars {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.daily-attempt-bars span {
+  height: 6px;
+  border-radius: 99px;
+  background: #354253;
+}
+
+.daily-attempt-bars span.is-available {
+  background: linear-gradient(90deg, #baff78, #78db3b);
+  box-shadow: 0 0 12px rgba(163, 255, 79, .15);
+}
+
+.daily-input-panel {
+  margin-top: 24px;
+}
+
+.daily-input-panel>label {
+  display: block;
+  margin-bottom: 10px;
+  color: #a6b4c5;
+  font-size: .68rem;
+  font-weight: 850;
+  letter-spacing: .13em;
+}
+
+.daily-digit-entry {
+  position: relative;
+}
+
+.daily-digit-entry input {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: 64px;
+  padding: 0 65px 0 18px;
+  border: 1px solid rgba(164, 187, 211, .2);
+  border-radius: 14px;
+  outline: none;
+  color: #f7fbff;
+  background: rgba(5, 11, 18, .38);
+  font-family: inherit;
+  font-size: 1.45rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: .42em;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+  transition: border-color .18s ease, box-shadow .18s ease;
+}
+
+.daily-digit-entry input::placeholder {
+  color: #607084;
+  opacity: 1;
+}
+
+.daily-digit-entry input:focus {
+  border-color: rgba(163, 255, 79, .7);
+  box-shadow: 0 0 0 3px rgba(163, 255, 79, .1);
+}
+
+.daily-digit-entry.is-complete input {
+  border-color: rgba(163, 255, 79, .55);
+}
+
+.daily-digit-entry input:disabled {
+  opacity: .65;
+}
+
+.daily-digit-count {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #718095;
+  font-size: .7rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+
+.daily-input-panel>p {
+  margin: 9px 0 0;
+  color: #7f8da0;
+  font-size: .72rem;
+  line-height: 1.5;
+}
+
+.daily-submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  min-height: 51px;
+  margin-top: 17px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 13px;
+  color: #13200b;
+  background: linear-gradient(110deg, #baff76, #7edb3d);
+  box-shadow: 0 8px 22px rgba(126, 219, 61, .16);
+  font: inherit;
+  font-size: .9rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform .18s ease, filter .18s ease, opacity .18s ease;
+}
+
+.daily-submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+}
+
+.daily-submit-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.daily-submit-button:disabled {
+  opacity: .42;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.daily-submit-button>span:last-child {
+  font-size: 1.2rem;
+}
+
+.daily-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(19, 32, 11, .25);
+  border-top-color: #13200b;
+  border-radius: 50%;
+  animation: daily-spin .7s linear infinite;
+}
+
+.daily-feedback {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 15px;
+  padding: 12px 13px;
+  border: 1px solid rgba(244, 196, 79, .17);
+  border-radius: 12px;
+  color: #e5d5a8;
+  background: rgba(244, 196, 79, .06);
+  font-size: .8rem;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.daily-feedback.is-success {
+  color: #c9f6a8;
+  border-color: rgba(163, 255, 79, .2);
+  background: rgba(163, 255, 79, .07);
+}
+
+.daily-feedback.is-finished {
+  color: #f3d69a;
+}
+
+.daily-feedback__icon {
+  display: grid;
+  place-items: center;
+  width: 19px;
+  height: 19px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  color: #18200f;
+  background: var(--daily-yellow);
+  font-size: .72rem;
+  font-weight: 900;
+}
+
+.daily-feedback.is-success .daily-feedback__icon {
+  background: var(--daily-green);
+}
+
+.daily-guide-card {
+  padding: clamp(18px, 3vw, 24px);
+}
+
+.daily-guide-card h2 {
+  margin-bottom: 5px;
+}
+
+.daily-guide-intro {
+  margin: 0 0 17px;
+  color: #8f9db0;
+  font-size: .78rem;
+  line-height: 1.5;
+}
+
+.daily-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 0;
+  border-top: 1px solid rgba(164, 187, 211, .08);
+}
+
+.daily-legend-tile {
+  display: grid;
+  place-items: center;
+  width: 37px;
+  height: 37px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  color: #101820;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.daily-legend-tile.is-green {
+  background: #48c979;
+}
+
+.daily-legend-tile.is-yellow {
+  background: #edc34c;
+}
+
+.daily-legend-tile.is-grey {
+  color: #e6ebf0;
+  background: #596779;
+}
+
+.daily-legend-item span:last-child {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.daily-legend-item strong {
+  color: #e8edf3;
+  font-size: .8rem;
+}
+
+.daily-legend-item small {
+  color: #8997a9;
+  font-size: .7rem;
+}
+
+.daily-guide-note {
+  margin-top: 13px;
+  padding: 11px 12px;
+  border: 1px solid rgba(163, 255, 79, .12);
+  border-radius: 11px;
+  color: #9cae9a;
+  background: rgba(163, 255, 79, .045);
+  font-size: .7rem;
+  line-height: 1.55;
+}
+
+.daily-history-card {
+  padding: clamp(18px, 3vw, 25px);
+}
+
+.daily-history-count {
+  padding: 6px 9px;
+  border: 1px solid rgba(164, 187, 211, .12);
+  border-radius: 999px;
+  color: #9eacbd;
+  font-size: .62rem;
+  font-weight: 850;
+  letter-spacing: .08em;
+}
+
+.daily-history-list {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.daily-history-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 9px 11px;
+  border: 1px solid rgba(164, 187, 211, .08);
+  border-radius: 12px;
+  background: rgba(5, 11, 18, .2);
+  animation: daily-row-in .28s ease both;
+}
+
+.daily-history-number {
+  color: #718095;
+  font-size: .68rem;
+  font-weight: 850;
+  font-variant-numeric: tabular-nums;
+}
+
+.daily-guess-tiles {
+  display: flex;
+  gap: clamp(5px, 1.4vw, 9px);
+  min-width: 0;
+}
+
+.daily-guess-tile {
+  display: grid;
+  place-items: center;
+  width: clamp(34px, 7vw, 43px);
+  height: clamp(38px, 7vw, 45px);
+  border-radius: 9px;
+  color: white;
+  font-size: 1rem;
+  font-weight: 900;
+  font-variant-numeric: tabular-nums;
+}
+
+.daily-guess-tile.green {
+  color: #082114;
+  background: #4bd17d;
+}
+
+.daily-guess-tile.yellow {
+  color: #28200b;
+  background: #f0c64f;
+}
+
+.daily-guess-tile.grey {
+  color: #e4eaf1;
+  background: #536174;
+}
+
+.daily-history-result {
+  margin-left: auto;
+  color: #8796a9;
+  font-size: .68rem;
+  white-space: nowrap;
+}
+
+.daily-history-empty {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  padding: 28px 12px 12px;
+  text-align: center;
+}
+
+.daily-empty-icon {
+  color: #a3ff4f;
+  font-size: 2rem;
+}
+
+.daily-history-empty strong {
+  color: #dce5ee;
+  font-size: .85rem;
+}
+
+.daily-history-empty p {
+  margin: 0;
+  color: #8291a4;
+  font-size: .72rem;
+  line-height: 1.5;
+}
+
+.daily-history-loading {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.daily-history-loading span {
+  width: 39px;
+  height: 43px;
+  border-radius: 9px;
+  background: linear-gradient(90deg, #263445, #344457, #263445);
+  background-size: 200% 100%;
+  animation: daily-shimmer 1.2s ease infinite;
+}
+
+@keyframes daily-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes daily-row-in {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes daily-shimmer {
+  to {
+    background-position: -200% 0;
+  }
+}
+
+/* The global header and bottom dock stay above route content on every page. */
+.premium-nav {
+  position: sticky !important;
+  top: 0;
+  z-index: 250 !important;
+  flex-shrink: 0;
+}
+
+.premium-mobile-nav {
+  z-index: 240 !important;
+}
+
+.page-wrap:has(.daily-challenge-page) {
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 0;
+}
+
+@media (max-width: 820px) {
+  .daily-challenge-page {
+    padding: 12px 0 20px;
+  }
+
+  .daily-challenge-shell {
+    gap: 12px;
+  }
+
+  .daily-hero {
+    padding: 19px 17px;
+    border-radius: 18px;
+  }
+
+  .daily-date-card {
+    flex-basis: 92px;
+    padding: 12px 7px;
+  }
+
+  .daily-date-card__icon {
+    font-size: 1.3rem;
+  }
+
+  .daily-date-card {
+    font-size: .5rem;
+  }
+
+  .daily-date-card strong {
+    font-size: .63rem;
+  }
+
+  .daily-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .daily-game-card,
+  .daily-guide-card,
+  .daily-history-card {
+    border-radius: 17px;
+  }
+
+  .daily-guide-card {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 10px;
+  }
+
+  .daily-guide-card>.daily-section-kicker,
+  .daily-guide-card>h2,
+  .daily-guide-intro,
+  .daily-guide-note {
+    grid-column: 1 / -1;
+  }
+
+  .daily-legend-item {
+    align-items: flex-start;
+    gap: 7px;
+  }
+
+  .daily-legend-tile {
+    width: 31px;
+    height: 31px;
+    border-radius: 8px;
+  }
+
+  .daily-legend-item small {
+    font-size: .64rem;
+  }
+
+  .daily-guide-note {
+    margin-top: 9px;
+  }
+}
+
+@media (max-width: 420px) {
+  .daily-challenge-page {
+    padding-inline: 0;
+  }
+
+  .daily-hero {
+    gap: 9px;
+    padding: 17px 14px;
+  }
+
+  .daily-hero h1 {
+    font-size: 1.85rem;
+  }
+
+  .daily-hero p {
+    max-width: 230px;
+    font-size: .78rem;
+  }
+
+  .daily-date-card {
+    flex-basis: 78px;
+  }
+
+  .daily-status-badge {
+    padding: 6px 8px;
+    font-size: .59rem;
+  }
+
+  .daily-card-heading h2 {
+    font-size: 1.05rem;
+  }
+
+  .daily-digit-entry input {
+    height: 58px;
+    padding-left: 8px;
+    padding-right: 53px;
+    font-size: 1.25rem;
+    letter-spacing: .32em;
+  }
+
+  .daily-digit-count {
+    right: 10px;
+    font-size: .63rem;
+  }
+
+  .daily-guide-card {
+    column-gap: 6px;
+    padding: 16px 13px;
+  }
+
+  .daily-legend-item {
+    flex-direction: column;
+  }
+
+  .daily-legend-item span:last-child {
+    gap: 1px;
+  }
+
+  .daily-legend-item small {
+    font-size: .61rem;
+  }
+
+  .daily-history-row {
+    gap: 7px;
+    padding: 8px 7px;
+  }
+
+  .daily-guess-tiles {
+    gap: 4px;
+  }
+
+  .daily-guess-tile {
+    width: clamp(29px, 8vw, 34px);
+    height: 36px;
+    font-size: .88rem;
+    border-radius: 7px;
+  }
+
+  .daily-history-result {
+    font-size: .6rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .daily-challenge-page *,
+  .daily-challenge-page *::before,
+  .daily-challenge-page *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

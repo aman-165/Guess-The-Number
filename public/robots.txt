@@ -1,0 +1,5 @@
+
+# Robots.txt - Guess The Number
+
+User-agent: *
+Allow: /

@@ -1,0 +1,252 @@
+/* ==========================================================
+   PHASE 5 — MICRO-INTERACTIONS
+   Additive, lightweight effects. Honors reduced-motion settings.
+   ========================================================== */
+
+.toast-viewport {
+  position: fixed;
+  z-index: 1200;
+  top: 18px;
+  right: 18px;
+  display: grid;
+  gap: 10px;
+  width: min(380px, calc(100vw - 28px));
+  pointer-events: none;
+}
+
+.game-toast {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 14px;
+  color: #f4f7fb;
+  background: rgba(17, 25, 36, .97);
+  border: 1px solid rgba(190, 211, 232, .16);
+  border-left: 3px solid #a3ff4f;
+  border-radius: 13px;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, .38);
+  backdrop-filter: blur(16px);
+  pointer-events: auto;
+  animation: toast-enter .24s cubic-bezier(.2, .8, .2, 1) both;
+}
+
+.game-toast--success {
+  border-left-color: #35c979;
+}
+
+.game-toast--warning {
+  border-left-color: #ebcb45;
+}
+
+.game-toast--error {
+  border-left-color: #ff647c;
+}
+
+.game-toast__message {
+  flex: 1;
+  font-size: .9rem;
+  line-height: 1.4;
+}
+
+.game-toast__close {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  border: 0;
+  border-radius: 8px;
+  color: #aeb9c7;
+  background: rgba(255, 255, 255, .06);
+  cursor: pointer;
+  font-size: 1.15rem;
+}
+
+.game-toast__close:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, .12);
+}
+
+@keyframes toast-enter {
+  from {
+    opacity: 0;
+    transform: translate3d(18px, -7px, 0) scale(.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+/* Button ripple — created only for real pointer interactions */
+button,
+.btn,
+[role="button"] {
+  position: relative;
+  isolation: isolate;
+}
+
+.interaction-ripple {
+  position: absolute;
+  z-index: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: rgba(255, 255, 255, .42);
+  transform: translate(-50%, -50%) scale(0);
+  animation: interaction-ripple .48s ease-out forwards;
+}
+
+@keyframes interaction-ripple {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(16);
+  }
+}
+
+/* Modal and dropdown entrance */
+.sound-modal-backdrop {
+  animation: overlay-in .18s ease both;
+}
+
+.sound-modal {
+  transform-origin: center;
+  animation: modal-in .22s cubic-bezier(.2, .8, .2, 1) both;
+}
+
+.notification-dropdown {
+  transform-origin: top right;
+  animation: dropdown-in .17s ease both;
+}
+
+@keyframes overlay-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(.975);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes dropdown-in {
+  from {
+    opacity: 0;
+    transform: translateY(-5px) scale(.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Page and content feedback */
+.page-wrap>* {
+  animation: page-arrive .24s ease both;
+}
+
+@keyframes page-arrive {
+  from {
+    opacity: .65;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.message {
+  animation: message-arrive .18s ease both;
+}
+
+@keyframes message-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Lightweight tooltip support for elements that opt in */
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 30;
+  left: 50%;
+  bottom: calc(100% + 9px);
+  width: max-content;
+  max-width: min(240px, 80vw);
+  padding: 6px 9px;
+  border: 1px solid rgba(190, 211, 232, .16);
+  border-radius: 8px;
+  color: #f4f7fb;
+  background: #111923;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .28);
+  font-size: .75rem;
+  font-weight: 600;
+  line-height: 1.35;
+  white-space: normal;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, 4px);
+  transition: opacity .16s ease, transform .16s ease;
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip]:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+@media (max-width: 600px) {
+  .toast-viewport {
+    top: 10px;
+    right: 10px;
+    width: calc(100vw - 20px);
+  }
+
+  .game-toast {
+    padding: 11px 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .game-toast,
+  .sound-modal-backdrop,
+  .sound-modal,
+  .notification-dropdown,
+  .page-wrap>*,
+  .message,
+  .interaction-ripple {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  [data-tooltip]::after {
+    transition: none !important;
+  }
+}
