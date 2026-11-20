@@ -388,7 +388,7 @@ These are suggestions, not claims about existing functionality.
 
 This repository may be publicly viewable on GitHub, but the project is not open source and is not offered under an MIT, Apache, GPL, or other open-source license. No general permission is granted to copy, modify, redistribute, sublicense, or use this project commercially.
 
-See [`LICENSE`](./LICENSE) for the project's usage terms. For permission to use any part of this project beyond rights provided by applicable law or the GitHub platform's terms, contact the copyright holder.
+See [`LICENSE`](./) for the project's usage terms. For permission to use any part of this project beyond rights provided by applicable law or the GitHub platform's terms, contact the copyright holder.
 
 Third-party libraries and services used by this project remain subject to their own licenses and terms.
 ---
