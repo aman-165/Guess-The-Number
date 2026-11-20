@@ -90,7 +90,7 @@ export default function Signup() {
       return;
     }
     if (formData.password.length < 6) {
-      setMessage("Password must be at least 6 characters.");
+      setMessage("Password must be at least 8 characters including A–Z, a–z, 0–9 & symbol.");
       setMessageType("error");
       return;
     }
@@ -110,6 +110,19 @@ export default function Signup() {
 
       if (error) {
         setMessage(error.message);
+        setMessageType("error");
+        return;
+      }
+
+      // Detect an email that may already be registered
+      if (
+        data.user &&
+        Array.isArray(data.user.identities) &&
+        data.user.identities.length === 0
+      ) {
+        setMessage(
+          "This email may already be registered. Please log in or use Forgot Password."
+        );
         setMessageType("error");
         return;
       }
@@ -180,7 +193,7 @@ export default function Signup() {
                 onToggle={() => setShowConfirmPassword((value) => !value)}
                 autoComplete="new-password" />
             </div>
-            <p className="auth-password-hint">Use at least 6 characters for your password.</p>
+            <p className="auth-password-hint">Use at least 8 characters for your password.</p>
 
             <button className="auth-submit" type="submit" disabled={loading}>
               <span>{loading ? "Creating your account..." : "Create player account"}</span>
