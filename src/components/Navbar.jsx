@@ -3,6 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { supabase } from "../lib/supabaseClient";
 import { useSound } from "../context/SoundContext";
 import { SoundSettings } from "./SoundSettings";
+import logo from "../assets/number-guesser-icon-v4-dark.svg";
 
 /* Small inline SVG icon set: avoids adding another runtime dependency. */
 function NavIcon({ name, size = 20 }) {
@@ -240,7 +241,7 @@ export default function Navbar() {
       <header className="nav premium-nav">
         <NavLink to="/" className="premium-nav__brand" aria-label="Number Guesser home">
           <img
-            src="/src/assets/number-guesser-icon-v4-dark.svg"
+            src={logo}
             alt=""
             className="premium-nav__brand-logo"
             width="38"

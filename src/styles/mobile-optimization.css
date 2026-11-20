@@ -1,6 +1,3 @@
-/* Phase 8.4 — mobile-first polish for the social experience.
-   Layout-only overrides: no gameplay, routing, or Supabase behavior changes. */
-
 :root {
   --mobile-dock-clearance: 104px;
 }
@@ -55,7 +52,7 @@ textarea {
     padding: 14px 12px calc(116px + env(safe-area-inset-bottom));
   }
 
-  .page-wrap > * {
+  .page-wrap>* {
     min-width: 0;
     max-width: 100%;
   }
@@ -69,8 +66,8 @@ textarea {
     border-radius: 17px;
   }
 
-  .premium-mobile-nav > .premium-nav__link,
-  .premium-mobile-nav .premium-nav__mobile-more > button {
+  .premium-mobile-nav>.premium-nav__link,
+  .premium-mobile-nav .premium-nav__mobile-more>button {
     min-height: 54px;
     font-size: .68rem;
     -webkit-tap-highlight-color: transparent;
@@ -166,8 +163,8 @@ textarea {
     min-height: 42px;
   }
 
-  .premium-mobile-nav > .premium-nav__link,
-  .premium-mobile-nav .premium-nav__mobile-more > button {
+  .premium-mobile-nav>.premium-nav__link,
+  .premium-mobile-nav .premium-nav__mobile-more>button {
     min-height: 52px;
     font-size: .64rem;
   }
@@ -178,7 +175,7 @@ textarea {
     padding-inline: 7px !important;
   }
 
-  .premium-nav__brand > span:last-child {
+  .premium-nav__brand>span:last-child {
     max-width: 100px;
   }
 
@@ -196,7 +193,10 @@ textarea {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
+  html {
+    scroll-behavior: auto;
+  }
+
   .premium-mobile-nav,
   .premium-floating-bell,
   .friends-hub *,

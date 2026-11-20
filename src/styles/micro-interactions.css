@@ -1,8 +1,3 @@
-/* ==========================================================
-   PHASE 5 — MICRO-INTERACTIONS
-   Additive, lightweight effects. Honors reduced-motion settings.
-   ========================================================== */
-
 .toast-viewport {
   position: fixed;
   z-index: 1200;
